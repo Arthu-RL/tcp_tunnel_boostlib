@@ -13,8 +13,8 @@ TcpTunnel is a versatile tool that supports port forwarding and various other fu
 
 ### Dependencies 
 
-[plog](https://github.com/SergiusTheBest/plog)
-[boost](https://www.boost.org/)
+- [plog](https://github.com/SergiusTheBest/plog)
+- [boost](https://www.boost.org/)
 
 ### Compiling
 
