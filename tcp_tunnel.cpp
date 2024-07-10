@@ -17,10 +17,6 @@ using boost::asio::ip::tcp;
 *
 * Usage
 * @example TcpTunnel tunnel(io_context, server_endpoint, client_endpoint);
-*
-* Compiling and Running
-* @example g++ -g -Wall -Wextra -o tcp_tunnel tcp_tunnel.cpp -lboost_system
-* @example ./tcp_tunnel "192.168.42.56" "0.0.0.0" "25565"
 */
 
 class TcpTunnel {
@@ -150,9 +146,9 @@ int main(int argc, char **argv) {
   try
   {
     // Default values
-    char server_hostname[ADDR_BUF_SIZE] = "127.0.0.1";  // Remote server address
-    char client_addr[ADDR_BUF_SIZE] = "0.0.0.0";  // Local endpoint for accepting connections
-    uint32_t port = 25565; // Minecraft port
+    char server_hostname[ADDR_BUF_SIZE] = "127.0.0.1";
+    char client_addr[ADDR_BUF_SIZE] = "0.0.0.0";
+    uint32_t port = 25565;
     
     if (argc == 4) {
       memset(server_hostname, 0, ADDR_BUF_SIZE);
