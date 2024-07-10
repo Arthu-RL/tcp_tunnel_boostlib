@@ -11,6 +11,11 @@ TcpTunnel is a versatile tool that supports port forwarding and various other fu
 
 ## Usage
 
+### Dependencies 
+
+[plog](https://github.com/SergiusTheBest/plog)
+[boost](https://www.boost.org/)
+
 ### Compiling
 
 To compile the TcpTunnel program, use the following command:
