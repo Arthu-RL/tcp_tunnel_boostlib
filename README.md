@@ -1,6 +1,6 @@
 # TcpTunnel
 
-TCP server wrote in c++.
+TCP server wrote in C++ and C.
 
 ## Table of Contents
 
