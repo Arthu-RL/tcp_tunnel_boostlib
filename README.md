@@ -1,6 +1,6 @@
 # TcpTunnel
 
-TcpTunnel is a versatile tool that supports port forwarding and various other functionalities.
+TCP server wrote in c++.
 
 ## Table of Contents
 
@@ -21,7 +21,13 @@ TcpTunnel is a versatile tool that supports port forwarding and various other fu
 To compile the TcpTunnel program, use the following command:
 
 ```bash
-g++ -g -Wall -Wextra -o tcp_tunnel tcp_tunnel.cpp
+g++ -std=c++11 -Wall -Wextra -o tcp_server tcp_server.cpp -lboost_system -lplog
+```
+
+Alternatively, you can compile using build.sh script:
+
+```bash
+./build.sh 1
 ```
 
 ### Running
@@ -29,10 +35,8 @@ g++ -g -Wall -Wextra -o tcp_tunnel tcp_tunnel.cpp
 To run the TcpTunnel program, use the following command:
 
 ```bash
-./tcp_tunnel "192.168.x.x" "0.0.0.0" "25565"
+./tcp_server "0.0.0.0" "25565"
 ```
-
-Replace "192.168.x.x" with the server hostname or IP address, "0.0.0.0" with the client address, and "25565" with the desired port number.
 
 ## Contributing
 
