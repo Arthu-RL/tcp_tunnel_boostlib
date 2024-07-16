@@ -18,16 +18,16 @@ TCP server wrote in c++.
 
 ### Compiling
 
-To compile the TcpTunnel program, use the following command:
+To compile the TcpTunnel C++ program, use the following command:
 
 ```bash
-g++ -std=c++11 -Wall -Wextra -o tcp_server tcp_server.cpp -lboost_system -lplog
+./build.sh 1 1
 ```
 
-Alternatively, you can compile using build.sh script:
+To compile the TcpTunnel C program, use the following command:
 
 ```bash
-./build.sh 1
+./build.sh 2 1
 ```
 
 ### Running
